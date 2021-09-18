@@ -1,10 +1,18 @@
+/**
+ * Esta clase es la vista del programa, donde imprime toda la informacion requerida
+ * @author: Linda Ines Jimenez Vides
+ * @version: 17 - septiembre - 2021
+ */
 import java.util.Scanner;
 
 public class Vista {
 
+    //Creacion de contructor de la clase scanner
     Scanner sn = new Scanner(System.in);
+    //Creacion de objeto tipo archivo
     Archivo archivo = new Archivo();
     
+    //Vista del menu principal
     public int menu(){
 
             int opcion;
@@ -25,7 +33,7 @@ public class Vista {
             return opcion;
     }
 
- 
+    //Vista del menu secundario
     public int menuProgramas(){
         int opcionp;
     
@@ -44,31 +52,47 @@ public class Vista {
             return opcionp;
     }
 
+    /**
+     * Metodo que permite crear los archivos cuando se crea una nueva memoria ram
+     */
     public void nuevaRAM(){
         archivo.archivoE();
         archivo.archivoP();
     }
 
+    /**
+     * Metodo que imprime los datos de la memoria ram
+     */
     public void datosRAM(){
         System.out.println("Tamaño RAM: 16GB, 256 bloques en total");
         return;
     }
 
+    /**
+     * Metodo que imprime la lista de todos los programas de la computadora
+     */
     public void programas(){
 
         archivo.Programas();
     }
 
+    /**
+     * Metodo que imprime la lista de los programas en cola
+     */
     public void programasC(){
 
         archivo.ProgramaC();
     }
 
+    /**
+     * Metodo que imprime los programas en ejecucion
+     */
     public void programasE(){
 
         archivo.ProgramasE();
     }
     
+    //Impresion mensaje final
     public void Salir(){
         System.out.println("Fin del programa");
     }

@@ -1,3 +1,8 @@
+/**
+ * Esta clase es donde secrean los archivos a almacenar los arreglos del programa.
+ * @author: Linda Ines Jimenez Vides
+ * @version: 17 - septiembre - 2021
+ */
 import java.util.Arrays;
 import java.io.File;
 import java.lang.String;
@@ -9,15 +14,22 @@ import java.util.Scanner;
 
 public class Archivo {
 
+    //Creacion de objeto tipo scanner
     Scanner sn = new Scanner(System.in);
 
+    //Creacion de archivos de texto
     File programa = new File("Programas.txt");
     File ejecucion = new File("ProgramasE.txt");
 
+    //Creacion de arreglos donde se encuentran los programas de la computadora
     String[] ProgramasT = new String[256];
     String[] Programas = new String[]{"GOOGLE CHROME,2070,8", " - FIREFOX,64,16", " - ZOOM,320,60", " - WHATSAPP,128,8", " - TELEGRAM,128,8", " - VISUAL STUDIO,320,60", " - MAIL,32,15", " - CONTACTOS,32,8", " - WORD,1024,10", " - TEAMS,1024,10", " - DISCORD,1024,10"};
     String[] ProgramasC = new String[8];
     
+    /**
+     * Metodo agrega los programas con que se inicia la memoria ram
+     * @return ProgramasT
+     */
     public void ProgramasE(){
         try {
             ProgramasT[0] = "ZOOM,320,60";
@@ -30,6 +42,10 @@ public class Archivo {
         }
     }
 
+    /**
+     * Metodo que agrega los programas en cola a una lista
+     * @return ProgramasC
+     */
     public void ProgramaC(){
         try{
             ProgramasC[0] = "GOOGLE CHROME,2070,8";
@@ -47,11 +63,18 @@ public class Archivo {
         }
     }
 
+    /**
+     * Metodo que imprime la lista de tosos los programas de la omputadora.
+     * @return Programas
+     */
     public void Programas(){
         System.out.println("Lista de Programas Instalados: " +Arrays.toString(Programas));
             return;
     }
 
+    /**
+     * Metodo que crea el archivo para los programas en ejeucion
+     */
     public void archivoE(){
         try {
             // Si el archivo no existe es creado
@@ -67,6 +90,9 @@ public class Archivo {
         }
     }
 
+    /**
+     * Metodo que crea el archivo con los programas de la computadora
+     */
     public void archivoP(){
         try {
             // Si el archivo no existe es creado
@@ -82,6 +108,9 @@ public class Archivo {
         }
     }
 
+    /**
+     * Metodo que lee e imprime el cntenido del archivo de programas
+     */
     public void leerProgramas(){
         try{
             String leer;
@@ -95,6 +124,9 @@ public class Archivo {
         }
     }
 
+    /**
+     * Metodo que lee e imprime el archivo de programas en ejecucion
+     */
     public void leerProgramaE(){
         try{  
             String leerA; 
@@ -108,42 +140,70 @@ public class Archivo {
         }
     }
 
+    /**
+     * Metodo que agrega el programa Google Chrome a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aGoogle(){
         ProgramasT[3] = "GOOGLE CHROME,2070,8";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }
 
+    /**
+     * Metodo que agrega el programa Firefox a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aFire(){
         ProgramasT[4] = "FIREFOX,64,16";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }
 
+    /**
+     * Metodo que agrega el programa Whatsapp a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aWhats(){
         ProgramasT[5] = "WHATSAPP,128,8";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }
 
+    /**
+     * Metodo que agrega el programa Telegram a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aTel(){
         ProgramasT[6] = "TELEGRAM,128,8";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }
 
+    /**
+     * Metodo que agrega el programa Visual Studio a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aVS(){
         ProgramasT[7] = "VISUAL STUDIO,320,60";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }
 
+    /**
+     * Metodo que agrega el programa Word a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aWord(){
         ProgramasT[7] = "WORD,1024,10";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }
 
+    /**
+     * Metodo que agrega el programa Mail a la lista de programas en ejecucion
+     * @return ProgramasT
+     */
     public void aMail(){
         ProgramasT[8] = "MAIL,32,15";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));

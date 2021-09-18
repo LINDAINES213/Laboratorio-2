@@ -1,13 +1,21 @@
+/**
+ * Esta clase es el controlador del programa.
+ * @author: Linda Ines Jimenez Vides
+ * @version: 17 - septiembre - 2021
+ */
 public class Controlador {
 
     public static void main (String[] args){
 
+        //Creacion de objeto tipo vista
         Vista vista = new Vista();
+        //Creacion de objeto tipo archivo
         Archivo archivo = new Archivo();
 
         int opcion = 0;
         int opcionp = 0;
 
+        // If del menu impreso desde la clase vista donde se colocan los metodos para llamar a otroa previamente programados para que funcione el programa completo
         while(opcion != 8){
 
             opcion = vista.menu();
