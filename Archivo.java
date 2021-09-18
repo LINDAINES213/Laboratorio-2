@@ -108,8 +108,44 @@ public class Archivo {
         }
     }
 
-    public void aWord(){
+    public void aGoogle(){
         ProgramasT[3] = "GOOGLE CHROME,2070,8";
+        System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
+        return;
+    }
+
+    public void aFire(){
+        ProgramasT[4] = "FIREFOX,64,16";
+        System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
+        return;
+    }
+
+    public void aWhats(){
+        ProgramasT[5] = "WHATSAPP,128,8";
+        System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
+        return;
+    }
+
+    public void aTel(){
+        ProgramasT[6] = "TELEGRAM,128,8";
+        System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
+        return;
+    }
+
+    public void aVS(){
+        ProgramasT[7] = "VISUAL STUDIO,320,60";
+        System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
+        return;
+    }
+
+    public void aWord(){
+        ProgramasT[7] = "WORD,1024,10";
+        System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
+        return;
+    }
+
+    public void aMail(){
+        ProgramasT[8] = "MAIL,32,15";
         System.out.println("Programas en ejecucion: " +Arrays.toString(ProgramasT));
         return;
     }

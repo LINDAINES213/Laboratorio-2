@@ -32,13 +32,11 @@ public class Vista {
             String menu = "\n¿Que programa desea ejecutar?\n" +
                                 "1. GOOGLE CHROME,2070,8\n" +
                                 "2. FIREFOX,64,16\n" +
-                                "3. ZOOM,320,60\n" +
-                                "4. WHATSAPP,128,8\n" +
-                                "5. TELEGRAM,128,8\n" +
-                                "6. VISUAL STUDIO,320,60\n" +
-                                "7. MAIL,32,15\n" +
-                                "8. CONTACTOS,32,8\n" +
-                                "9. WORD,1024,10\n";
+                                "3. WHATSAPP,128,8\n" +
+                                "4. TELEGRAM,128,8\n" +
+                                "5. VISUAL STUDIO,320,60\n" +
+                                "6. MAIL,32,15\n" +
+                                "7. WORD,1024,10\n";
     
             System.out.println(menu);
             opcionp =  sn.nextInt();

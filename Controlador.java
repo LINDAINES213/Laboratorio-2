@@ -34,20 +34,39 @@ public class Controlador {
 
             } else if (opcion == 6){
 
+                vista.programasE();
+
             } else if (opcion == 7){
 
                 opcionp = vista.menuProgramas();
 
                 if (opcionp == 1){
 
-                    archivo.aWord();
+                    archivo.aGoogle();
                     
                 } else if (opcionp == 2){
 
+                    archivo.aFire();
 
                 } else if (opcionp == 3){
 
+                    archivo.aWhats();
 
+                } else if (opcionp == 4){
+
+                    archivo.aTel();
+
+                } else if (opcionp == 5){
+
+                    archivo.aVS();
+
+                } else if (opcionp == 6){
+
+                    archivo.aMail();
+
+                } else if (opcionp == 7){
+
+                    archivo.aWord();
                 }
 
             } else if (opcion == 8){
